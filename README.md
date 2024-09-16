@@ -31,3 +31,20 @@ A C++ console-based application integrated with MySQL for managing student recor
        Subject VARCHAR(100),
        CGPA FLOAT
    );
+2. **Configure the Project:**:
+   - Replace the MySQL connection details (HOST, USER, PW, DB) in the code with your own       
+     credentials:
+       ```sql
+       const char* HOST = "localhost";
+      const char* USER = "root";
+      const char* PW = "your password";
+      const char* DB = "mydb";
+3. **Compile and Run:**:
+   - Compile the C++ code using any C++ compiler (e.g., g++, Visual Studio).
+   - Make sure to link the MySQL library during compilation
+    ```sql
+   g++ -o university_management_system university_management_system.cpp -lmysqlclient
+4. ** Run the program :**:
+   - After compiling, run the program
+       ```sql
+      ./university_management_system
